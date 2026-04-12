@@ -16,7 +16,7 @@ import shutil
 from ultralytics import YOLO
 
 # How many passes over the data (bigger = longer, often a bit better)
-EPOCHS = 50
+EPOCHS = 25
 
 here = Path(__file__).parent
 data_file = here / "fruit-detection-24" / "data.yaml"
