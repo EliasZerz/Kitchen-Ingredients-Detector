@@ -1,6 +1,7 @@
-"""Start the API. Run from project root: python serve.py
+"""Start the API. From project root: python serve.py
 
-Then open http://127.0.0.1:8000/docs in your browser.
+API docs: http://127.0.0.1:8000/docs
+React UI (separate terminal): cd frontend && npm run dev  →  http://127.0.0.1:5173
 """
 
 import uvicorn

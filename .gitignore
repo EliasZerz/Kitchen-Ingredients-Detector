@@ -19,3 +19,6 @@ data/raw/
 # Roboflow / local downloads — large; re-fetch with download_dataset.py or Roboflow CLI
 fruit-detection-*/
 
+frontend/node_modules/
+frontend/dist/
+

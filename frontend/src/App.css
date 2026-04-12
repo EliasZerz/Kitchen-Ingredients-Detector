@@ -1,0 +1,212 @@
+.app {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  font-family: system-ui, Segoe UI, sans-serif;
+  color: #1a1a1a;
+}
+
+.header h1 {
+  font-size: 1.75rem;
+  font-weight: 650;
+  margin: 0 0 0.35rem;
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.panel {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  background: #f6f7f9;
+  border-radius: 12px;
+  border: 1px solid #e2e5eb;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.file-label,
+.conf {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.file-label input[type='file'] {
+  font-size: 0.9rem;
+}
+
+.conf input {
+  max-width: 6rem;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.panel button {
+  align-self: flex-start;
+  padding: 0.55rem 1.25rem;
+  font-weight: 600;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.panel button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.panel button:not(:disabled):hover {
+  background: #1d4ed8;
+}
+
+.preview {
+  margin: 1.5rem 0 0;
+  padding: 0;
+}
+
+.annotated {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.annotated img {
+  display: block;
+  width: 100%;
+  max-width: min(100%, 560px);
+  height: auto;
+  border-radius: 10px;
+  background: #eee;
+}
+
+.box-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.det-box {
+  position: absolute;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35) inset;
+}
+
+.det-tag {
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  margin-bottom: 2px;
+  padding: 3px 7px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 4px;
+  white-space: nowrap;
+  max-width: min(280px, 45vw);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.det-label {
+  text-transform: capitalize;
+}
+
+.det-kcal {
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+.det-tag em {
+  font-style: normal;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+.error {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  color: #b91c1c;
+  font-size: 0.9rem;
+}
+
+.results h2 {
+  font-size: 1.1rem;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.results ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.card {
+  padding: 0.85rem 1rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.card strong {
+  font-size: 1.05rem;
+  text-transform: capitalize;
+}
+
+.conf-val {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.kcal {
+  font-size: 0.9rem;
+  color: #059669;
+  font-weight: 600;
+}
+
+.bbox {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.empty {
+  margin-top: 1rem;
+  color: #6b7280;
+}
+
+.foot {
+  margin-top: 2.5rem;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.foot code {
+  font-size: 0.78rem;
+  background: #f3f4f6;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}
