@@ -11,6 +11,9 @@ env/
 *.pt
 
 *.log
+runs/
+*.egg-info/
+
 .DS_Store
 data/raw/
 # Roboflow / local downloads — large; re-fetch with download_dataset.py or Roboflow CLI
