@@ -9,9 +9,10 @@ env/
 .idea/
 .vscode/
 *.pt
-runs/
+
 *.log
 .DS_Store
 data/raw/
 # Roboflow / local downloads — large; re-fetch with download_dataset.py or Roboflow CLI
 fruit-detection-*/
+
